@@ -7,7 +7,7 @@ public class DragPan : MonoBehaviour
     Rigidbody rb;
 	private Vector3 tempPosition;
 	public Swipe swipe;
-	public float dragSpeed = .001f;
+	public float dragSpeed = 5f;
 
 
 	private void Start()

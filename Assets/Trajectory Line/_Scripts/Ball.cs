@@ -35,6 +35,14 @@ public class Ball : MonoBehaviour {
 		{
             return;
 		}
+
+		if (col.transform.CompareTag("duvar"))
+		{
+            CameraController.instance.CameraLoosePosition();
+            Destroy(gameObject);
+            UIManager.instance.LooseScreenEvent();
+            Cannon.instance.isStart = false;
+        }
         Instantiate(_poofPrefab, col.contacts[0].point, Quaternion.Euler(col.contacts[0].normal));
     }
 
