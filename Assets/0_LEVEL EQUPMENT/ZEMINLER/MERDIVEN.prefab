@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9131084806020232198}
   m_Layer: 0
   m_Name: supporto_ringhiera1.001_Cylinder.002
-  m_TagString: Untagged
+  m_TagString: duvar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 5816468008862105340}
   m_Layer: 0
   m_Name: carpet
-  m_TagString: Untagged
+  m_TagString: duvar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,7 +142,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2cc8fa1d3899e834e94320ce7720ec3a, type: 2}
+  - {fileID: 2100000, guid: cccd131ff8b460f4c88ed298f2702189, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 8161926274346718364}
   m_Layer: 0
   m_Name: supporto_ringhiera1.002_Cylinder.003
-  m_TagString: Untagged
+  m_TagString: duvar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 4872902162998132111}
   m_Layer: 0
   m_Name: maniglia_Cube.004
-  m_TagString: Untagged
+  m_TagString: duvar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -306,7 +306,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dd5e52c3037a5a9438b470af63992450, type: 2}
+  - {fileID: 2100000, guid: 42374f1035b32e8429e85a81b4a557dc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 8424741037447643474}
   m_Layer: 0
   m_Name: MERDIVEN
-  m_TagString: Untagged
+  m_TagString: duvar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -354,9 +354,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4960851019807641287}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -9.11, z: 10.04}
-  m_LocalScale: {x: 70, y: 70, z: 70}
+  m_LocalScale: {x: 51.8, y: 70, z: 70}
   m_Children:
   - {fileID: 4002002092553246940}
   - {fileID: 9200244268282035925}
@@ -396,8 +396,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dd5e52c3037a5a9438b470af63992450, type: 2}
-  - {fileID: 2100000, guid: dd5e52c3037a5a9438b470af63992450, type: 2}
+  - {fileID: 2100000, guid: 3a8325a1c7cdc1d489473868b9aeea56, type: 2}
+  - {fileID: 2100000, guid: 050fe89a0651e90458b82b5493ddc35f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 7435315373027814076}
   m_Layer: 0
   m_Name: maniglia.001_Cube.005
-  m_TagString: Untagged
+  m_TagString: duvar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -493,7 +493,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dd5e52c3037a5a9438b470af63992450, type: 2}
+  - {fileID: 2100000, guid: 42374f1035b32e8429e85a81b4a557dc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -528,7 +528,7 @@ GameObject:
   - component: {fileID: 4935896979382319407}
   m_Layer: 0
   m_Name: supporto_ringhiera1.003_Cylinder.004
-  m_TagString: Untagged
+  m_TagString: duvar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -610,7 +610,7 @@ GameObject:
   - component: {fileID: 8544473292194363084}
   m_Layer: 0
   m_Name: supporto_ringhiera1_Cylinder
-  m_TagString: Untagged
+  m_TagString: duvar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
