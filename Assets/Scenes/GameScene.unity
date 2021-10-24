@@ -1640,9 +1640,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelNo: 0
   levels:
-  - {fileID: 698769172150621622, guid: e75071ae0789a4268a0d6b4335dc079e, type: 3}
-  - {fileID: 2839482737541086158, guid: b75b9c0321e7e4a04835fd2a2b816448, type: 3}
-  - {fileID: 698769172150621622, guid: e75071ae0789a4268a0d6b4335dc079e, type: 3}
   - {fileID: 5423488656999371815, guid: ebddad2573b294caab27c279c0d1fa13, type: 3}
   - {fileID: 5113490686811321308, guid: 5a56dd66bbe4943e986fff49aa1eacc2, type: 3}
   - {fileID: 8533733282143136053, guid: a1f503cd479f44bc5b062b22e6277499, type: 3}
@@ -1650,17 +1647,20 @@ MonoBehaviour:
   - {fileID: 5478056990781400394, guid: dec129709193f422db419034aaec2d3f, type: 3}
   - {fileID: 601036277342325780, guid: 2d479c6650f494d778ee1b73a86838cb, type: 3}
   - {fileID: 3952426403859043853, guid: fee596925f9434c7d8321d024e173dd8, type: 3}
+  - {fileID: 5638670142546799293, guid: 49d7f14e056f84421b50e0dcdedf844e, type: 3}
+  - {fileID: 2839482737541086158, guid: b75b9c0321e7e4a04835fd2a2b816448, type: 3}
+  - {fileID: 698769172150621622, guid: e75071ae0789a4268a0d6b4335dc079e, type: 3}
   playerVector:
+  - {x: -35, y: -11.5, z: 0}
+  - {x: -30.6, y: -18, z: 0}
+  - {x: 1.4, y: -20.7, z: 0}
+  - {x: -47.1, y: -23.6, z: 0}
+  - {x: -34, y: 12, z: 0}
+  - {x: -4, y: 17, z: 0}
+  - {x: -1.2, y: 0.47, z: 13.7}
   - {x: -50, y: -15, z: 0}
   - {x: -48.5, y: -32.6, z: 0}
-  - {x: 3, y: -38.3, z: 11.656}
-  - {x: -43.88, y: 15.3, z: 11.656}
-  - {x: 7.39, y: -26.77, z: 0}
-  - {x: 7.39, y: -26.77, z: 0}
-  - {x: -47.1, y: -23.6, z: 0}
-  - {x: 7.39, y: -26.77, z: 0}
-  - {x: 7.39, y: -26.77, z: 0}
-  - {x: 7.39, y: -26.77, z: 0}
+  - {x: -10, y: -20, z: 0}
 --- !u!4 &904409485
 Transform:
   m_ObjectHideFlags: 0
@@ -3368,7 +3368,7 @@ MonoBehaviour:
   tempVelocity: {x: 0, y: 0, z: 0}
   gems: 0
   score: 0
-  isPrototyping: 1
+  isPrototyping: 0
 --- !u!4 &1891902974
 Transform:
   m_ObjectHideFlags: 0

@@ -14,8 +14,7 @@ public class CameraController : MonoBehaviour
 		if (instance == null) instance = this;
 		else Destroy(this);
 	}
-
-	public void CameraStartPosition()
+    public void CameraStartPosition()
 	{
 		cmVcam.LookAt = player.transform;
 		cmVcam.Follow = player.transform;
