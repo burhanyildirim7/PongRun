@@ -32,7 +32,7 @@ public class Cannon : MonoBehaviour {
             HandleControls();
             _projection.SimulateTrajectory(_ballPrefab, _ballSpawn.position, _ballSpawn.forward * _force);
         }
-        
+
     }
 
     #region Handle Controls
@@ -103,13 +103,13 @@ public class Cannon : MonoBehaviour {
 
 
 /*
- Yapýlacaklar...
--Level tasarlanýrken kullanýlacak olan mükemmel yola 3er 4er elmas dizilecek
--Win - Lose Senaryolarý 
+ Yap?lacaklar...
+-Level tasarlan?rken kullan?lacak olan m?kemmel yola 3er 4er elmas dizilecek
+-Win - Lose Senaryolar? 
 -Puanlama
--Win ekraný-Lose ekraný-TapToStart Ekraný
+-Win ekran?-Lose ekran?-TapToStart Ekran?
 -Level Controller
 -2 demo level
--Ekranýn sað ve solu görünmez duvar konup top tencereyi ýskaladýðýnda duvarýn içinden geçtiði noktada efekt patlasýn 
+-Ekran?n sa? ve solu g?r?nmez duvar konup top tencereyi ?skalad???nda duvar?n i?inden ge?ti?i noktada efekt patlas?n 
 
  */
