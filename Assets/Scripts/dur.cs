@@ -9,6 +9,7 @@ public class dur : MonoBehaviour
 	{
 		if (other.CompareTag("Ball"))
 		{
+			Cannon.instance.isBallMoving = false;
 			GetComponent<BoxCollider>().enabled = false;
 			GetComponent<Renderer>().enabled = false;
 			GameManager.instance.tempVelocity = other.GetComponent<Rigidbody>().velocity;

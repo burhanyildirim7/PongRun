@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 4727748271419723550}
   - component: {fileID: 2312763973797536816}
   - component: {fileID: 3507410673780365835}
-  - component: {fileID: 7932849454989328504}
-  - component: {fileID: 8854058933723820173}
+  - component: {fileID: 8259839357754065960}
   m_Layer: 0
   m_Name: TENCERE
   m_TagString: pan
@@ -116,7 +115,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 172462c95ba3b3940a5615575292ad38, type: 3}
---- !u!114 &7932849454989328504
+--- !u!114 &8259839357754065960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,20 +124,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4740227680583334236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b768b9dc9b1d0459c7f5c854f99e75, type: 3}
+  m_Script: {fileID: 11500000, guid: b51e7a5dd5a9b8f4490dcaba23d6319b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8854058933723820173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4740227680583334236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 125de29ba301c034ea1cfb411e16b773, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  swipe: {fileID: 7932849454989328504}
-  dragSpeed: 10

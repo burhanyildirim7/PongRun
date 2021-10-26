@@ -94,6 +94,7 @@ public class Projection : MonoBehaviour {
             for (var i = 0; i < _maxPhysicsFrameIterations; i++)
             {
                 _physicsScene.Simulate(Time.fixedDeltaTime);
+                //
                 if ((ghostObj.transform.position.z <= panPositionList[nextPanPosition].z - .2f))
                 {
                     _line.SetPosition(i, ghostObj.transform.position);
@@ -141,7 +142,7 @@ public class Projection : MonoBehaviour {
             int count = 0;
             for (int j = 0; j < diamondPositionList.Count; j+=2)
             {
-                if (diamondPositionList[j].z > panPositionList[i].z + .3f && diamondPositionList[j].z < panPositionList[i+1].z -.7f && count < 5)
+                if (diamondPositionList[j].z > panPositionList[i].z + .2f && diamondPositionList[j].z < panPositionList[i+1].z -.6f && count < 5)
 				{
                     Instantiate(diamond, diamondPositionList[j], Quaternion.identity);
                     count++;

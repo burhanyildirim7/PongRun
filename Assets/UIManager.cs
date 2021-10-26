@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour
 	private void Start()
 	{
 		StartUI();
-		totalScoreTextStartPanel.text = "Total Score : " + PlayerPrefs.GetInt("totalscore").ToString();
+		totalScoreTextStartPanel.text =PlayerPrefs.GetInt("totalscore").ToString();
 		//totalGemsTextStartPanel.text = "Total Gems : " + PlayerPrefs.GetInt("totalgems").ToString();
 		//totalGemsTextGamePanel.text = "Total Gems : " + PlayerPrefs.GetInt("totalgems").ToString();
 		//totalScoreTextGamePanel.text = "Total Score : " + PlayerPrefs.GetInt("totalscore").ToString();
@@ -79,19 +79,19 @@ public class UIManager : MonoBehaviour
 
 	public void SetTotalScoreText()
 	{
-		totalScoreTextStartPanel.text = "Total Score : " + PlayerPrefs.GetInt("totalscore").ToString();
-		totalScoreTextWinPanel.text = "Total Score : " + PlayerPrefs.GetInt("totalscore").ToString();
+		totalScoreTextStartPanel.text = PlayerPrefs.GetInt("totalscore").ToString();
+		totalScoreTextWinPanel.text = PlayerPrefs.GetInt("totalscore").ToString();
 	}
 
 	public void SetTotalGemsText()
 	{
-		totalGemsTextStartPanel.text = "Total Gems : " + PlayerPrefs.GetInt("totalgems").ToString();
-		totalGemsTextGamePanel.text = "Total Gems : " + PlayerPrefs.GetInt("totalgems").ToString();
+		totalGemsTextStartPanel.text = PlayerPrefs.GetInt("totalgems").ToString();
+		totalGemsTextGamePanel.text =  PlayerPrefs.GetInt("totalgems").ToString();
 	}
 
 	public void WinScreenEvent()
 	{
-		totalScoreTextWinPanel.text = "Total Score : " + PlayerPrefs.GetInt("totalscore").ToString();
+		totalScoreTextWinPanel.text = PlayerPrefs.GetInt("totalscore").ToString();
 		WinPanel.SetActive(true);
 		GamePanel.SetActive(false);
 	}
@@ -101,7 +101,9 @@ public class UIManager : MonoBehaviour
 		WinPanel.SetActive(false);
 		GamePanel.SetActive(false);
 		TapToStartPanel.SetActive(true);
-		totalScoreTextStartPanel.text = "Total Score : " + PlayerPrefs.GetInt("totalscore").ToString();
+		totalScoreTextStartPanel.text = PlayerPrefs.GetInt("totalscore").ToString();
+		scoreText.text = PlayerPrefs.GetInt("totalscore").ToString();
+
 	}
 
 	public void LooseScreenEvent()

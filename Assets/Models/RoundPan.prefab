@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8437104063958363122}
   - component: {fileID: 6080227321881063640}
   - component: {fileID: 404357725828208821}
+  - component: {fileID: 5325216284065664438}
   m_Layer: 0
   m_Name: RoundPan
   m_TagString: Untagged
@@ -52,6 +53,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -96,3 +98,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -9196350531085853698, guid: a06b896dea1682c47b9ab16557218b90, type: 3}
+--- !u!114 &5325216284065664438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2304887408779400734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b51e7a5dd5a9b8f4490dcaba23d6319b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

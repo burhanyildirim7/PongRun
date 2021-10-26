@@ -62,6 +62,5 @@ public class GameManager : MonoBehaviour
 					pans[i].transform.position.y, pans[i].transform.position.z);
 			}
 		}
-		Debug.Log(pans.Count);
 	}
 }

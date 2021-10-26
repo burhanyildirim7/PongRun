@@ -8,6 +8,13 @@ public class Cannon : MonoBehaviour {
     public Ball top;
     public bool isStart = false;
     public Vector3 spawnPosition;
+    public bool isBallMoving;
+    [SerializeField] private Ball _ballPrefab;
+    public float _force = 20;
+    [SerializeField] private Transform _ballSpawn;
+    [SerializeField] private Transform _barrelPivot;
+    [SerializeField] private float _rotateSpeed = 30;
+    [SerializeField] private ParticleSystem _launchParticles;
 
     // Add by SBI
     private void Awake()
@@ -29,7 +36,7 @@ public class Cannon : MonoBehaviour {
 	private void Update() {
 		if (isStart)
 		{
-            HandleControls();
+           // HandleControls();
             _projection.SimulateTrajectory(_ballPrefab, _ballSpawn.position, _ballSpawn.forward * _force);
         }
 
@@ -37,12 +44,7 @@ public class Cannon : MonoBehaviour {
 
     #region Handle Controls
 
-    [SerializeField] private Ball _ballPrefab;
-    [SerializeField] private float _force = 20;
-    [SerializeField] private Transform _ballSpawn;
-    [SerializeField] private Transform _barrelPivot;
-    [SerializeField] private float _rotateSpeed = 30;
-    [SerializeField] private ParticleSystem _launchParticles;
+   
 
     /// <summary>
     /// This is absolute spaghetti and should not be look upon for inspiration. I quickly smashed this together
@@ -73,6 +75,7 @@ public class Cannon : MonoBehaviour {
 	{
         top.GetComponent<Rigidbody>().velocity = GameManager.instance.tempVelocity;
         top.GetComponent<Rigidbody>().useGravity = true;
+        isBallMoving = true;
 	}
 
     public void Firlat()
@@ -82,6 +85,7 @@ public class Cannon : MonoBehaviour {
         top = spawned;
         spawned.Init(_ballSpawn.forward * _force, false);
         _launchParticles.Play();
+        isBallMoving = true;
 
         // Add by SBI
         //GameObject bardak = GameObject.Find("cup");

@@ -5,9 +5,13 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
 	public static LevelController instance;
-	public int levelNo;
+	public int levelNo,tempLevelNo;
+	public int totalLevelNo;
 	public List<GameObject> levels = new List<GameObject>();
 	public List<Vector3> playerVector = new List<Vector3>();
+	public List<float> force = new List<float>();
+	public List<bool> isCinemachine = new List<bool>();
+	public List<Vector3> cameraOffset = new List<Vector3>();
 	private GameObject currentLevelObj;
 
 	private void Awake()
@@ -18,31 +22,56 @@ public class LevelController : MonoBehaviour
 
 	private void Start()
 	{
-		PlayerPrefs.DeleteAll();
-		levelNo = PlayerPrefs.GetInt("level");
-		if (levelNo == 0) levelNo = 1;
+		//PlayerPrefs.DeleteAll();
+		totalLevelNo = PlayerPrefs.GetInt("level");
+		if (totalLevelNo == 0)
+		{
+			totalLevelNo = 1;
+			levelNo = 1;
+		}
+
 		UIManager.instance.SetLevelText(levelNo);
 		LevelStartingEvents();
 	}
 
 	public void IncreaseLevelNo()
 	{
-		levelNo++;
-		PlayerPrefs.SetInt("level", levelNo);
-		UIManager.instance.SetLevelText(levelNo);
+		tempLevelNo = levelNo;
+		totalLevelNo++;
+		PlayerPrefs.SetInt("level", totalLevelNo);
+		UIManager.instance.SetLevelText(totalLevelNo);
 	}
 
 	// Bu fonksiyon oyun ilk açıldığında çalıştırılacak
 	public void LevelStartingEvents()
 	{
+
+		if (totalLevelNo > levels.Count)
+		{
+			levelNo = Random.Range(1, levels.Count + 1);
+			if(levelNo == tempLevelNo) levelNo = Random.Range(1, levels.Count + 1);
+		}
+		else
+		{
+			levelNo = totalLevelNo;
+		}
 		UIManager.instance.TapToStartScreenEvent();
-		CameraController.instance.CameraStartPosition();
+		UIManager.instance.levelNoText.text = "Level : " + totalLevelNo; 
 		GameManager.instance.gems = 0;
 		//GameManager.instance.MakeCollectibleList();
 		currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
-		GameManager.instance.FindPans();
+		GameManager.instance.FindPans();	
+		CameraController.instance.isCinemachine = isCinemachine[levelNo - 1];
+		//if (!isCinemachine[levelNo - 1]) {
+		//	CameraController.instance.cameraPoint = GameObject.Find("cameraPoint").transform;
+		//	CameraController.instance.cameraLookAt = GameObject.Find("cameraLookAt").transform;
+		//}
+		CameraController.instance.SetCameraOffset(cameraOffset[levelNo - 1]);
+		CameraController.instance.CameraStartPosition();
 		Cannon.instance.transform.rotation = Quaternion.Euler(playerVector[levelNo -1]);
+		Cannon.instance._force = force[levelNo - 1];
 		Cannon.instance.StartScene();
+
 	}
 
 	// next level tuşuna basıldığında UIManager scriptinden çalıştırılacak
