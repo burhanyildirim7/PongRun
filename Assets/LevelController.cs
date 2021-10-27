@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using ElephantSDK;
 
 public class LevelController : MonoBehaviour
 {
@@ -56,7 +57,7 @@ public class LevelController : MonoBehaviour
 			levelNo = totalLevelNo;
 		}
 		UIManager.instance.TapToStartScreenEvent();
-		UIManager.instance.levelNoText.text = "Level : " + totalLevelNo; 
+		UIManager.instance.levelNoText.text = "LEVEL " + totalLevelNo; 
 		GameManager.instance.gems = 0;
 		//GameManager.instance.MakeCollectibleList();
 		currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
@@ -71,22 +72,26 @@ public class LevelController : MonoBehaviour
 		Cannon.instance.transform.rotation = Quaternion.Euler(playerVector[levelNo -1]);
 		Cannon.instance._force = force[levelNo - 1];
 		Cannon.instance.StartScene();
+		Elephant.LevelStarted(totalLevelNo);
 
 	}
 
 	// next level tuşuna basıldığında UIManager scriptinden çalıştırılacak
 	public void NextLevelEvents()
 	{
+		Elephant.LevelCompleted(totalLevelNo);
 		Destroy(currentLevelObj);
 		IncreaseLevelNo();
 		LevelStartingEvents();
 		StartCoroutine(Projection.instance.FindObstacleObject());
+		//Elephant.LevelStarted(totalLevelNo);
 	}
 
 	// restart level tuşuna basıldığında UIManager scriptinden çalıştırılacak
 	public void RestartLevelEvents()
 	{
 		// Deaktif edilen nesnelerin aktif edilmesi..
+		Elephant.LevelFailed(totalLevelNo);
 		Projection.instance.nextPanPosition = 1;
 		Cannon.instance.isStart = true;
 		CameraController.instance.CameraStartPosition();
@@ -103,5 +108,6 @@ public class LevelController : MonoBehaviour
 			collectibles[i].GetComponent<Renderer>().enabled = true;
 			collectibles[i].GetComponent<Collider>().enabled = true;
 		}
+		Elephant.LevelStarted(totalLevelNo);
 	}
 }

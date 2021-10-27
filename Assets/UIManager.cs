@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using ElephantSDK;
 
 public class UIManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class UIManager : MonoBehaviour
 	public Text soundButtonText, levelNoText, scoreText, gemsText,
 	totalScoreTextStartPanel, totalGemsTextStartPanel, totalScoreTextWinPanel, totalGemsTextGamePanel;
 
-
+	
 	private void Awake()
 	{
 		if (instance == null) instance = this;
@@ -37,10 +38,10 @@ public class UIManager : MonoBehaviour
 
 	public void SetLevelText(int levelNo)
 	{
-		levelNoText.text = "Level " + levelNo.ToString();
+		levelNoText.text = "LEVEL " + levelNo.ToString();
 	}
 
-	// TAPTOSTART TUÞUNA BASILDIÐINDA  --- GÝRÝÞ EKRANINDA VE LEVEL BAÞLARINDA
+	// TAPTOSTART TU?UNA BASILDI?INDA  --- G?R?? EKRANINDA VE LEVEL BA?LARINDA
 	public void TapToStartButtonClick()
 	{
 		Cannon.instance.Firlat();
@@ -48,7 +49,7 @@ public class UIManager : MonoBehaviour
 		GamePanel.SetActive(true);
 	}
 
-	// RESTART TUÞUNA BASILDIÐINDA  --- LOOSE EKRANINDA
+	// RESTART TU?UNA BASILDI?INDA  --- LOOSE EKRANINDA
 	public void RestartButtonClick()
 	{
 		TapToStartPanel.SetActive(true);
@@ -58,7 +59,7 @@ public class UIManager : MonoBehaviour
 	}
 
 
-	// NEXT LEVEL TUÞUNA BASILDIÐINDA  --- WÝN EKRANINDA
+	// NEXT LEVEL TU?UNA BASILDI?INDA  --- W?N EKRANINDA
 	public void NextLevelButtonClick()
 	{
 		TapToStartPanel.SetActive(true);
@@ -91,9 +92,10 @@ public class UIManager : MonoBehaviour
 
 	public void WinScreenEvent()
 	{
-		totalScoreTextWinPanel.text = PlayerPrefs.GetInt("totalscore").ToString();
+		totalScoreTextWinPanel.text = PlayerPrefs.GetInt("levelscore").ToString();
 		WinPanel.SetActive(true);
 		GamePanel.SetActive(false);
+		
 	}
 
 	public void TapToStartScreenEvent()

@@ -20,8 +20,9 @@ public class GameManager : MonoBehaviour
 	public void increaseScore(int add)
 	{
 		score = score + add;
-		UIManager.instance.scoreText.text = "Score : " + score.ToString();
+		UIManager.instance.scoreText.text = score.ToString();
 		PlayerPrefs.SetInt("totalscore", score);
+		PlayerPrefs.SetInt("levelscore", score);
 	}
 
 	public void FindPans()
@@ -44,7 +45,7 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	// Her levele baþlarken tavalarýn konumlarýný ayarlamak için...
+	// Her levele ba?larken tavalar?n konumlar?n? ayarlamak i?in...
 	public void ShuflePans()
 	{
 		for (int i = 1; i< pans.Count; i++)
