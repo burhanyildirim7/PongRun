@@ -86,6 +86,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: KNTY_LEVEL2
       objectReference: {fileID: 0}
+    - target: {fileID: 401929488108143293, guid: 7a0ae14e277374dd4ab0d9eeda0af16b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 401929488108143293, guid: 7a0ae14e277374dd4ab0d9eeda0af16b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 401929488108143293, guid: 7a0ae14e277374dd4ab0d9eeda0af16b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633122116670926675, guid: 7a0ae14e277374dd4ab0d9eeda0af16b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633122116670926675, guid: 7a0ae14e277374dd4ab0d9eeda0af16b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633122116670926675, guid: 7a0ae14e277374dd4ab0d9eeda0af16b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041722323878682936, guid: 7a0ae14e277374dd4ab0d9eeda0af16b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041722323878682936, guid: 7a0ae14e277374dd4ab0d9eeda0af16b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041722323878682936, guid: 7a0ae14e277374dd4ab0d9eeda0af16b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a0ae14e277374dd4ab0d9eeda0af16b, type: 3}
 --- !u!4 &2597497635981127575 stripped
