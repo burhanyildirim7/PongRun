@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4736566640643310006}
   - component: {fileID: 4727748271419723550}
   - component: {fileID: 2312763973797536816}
-  - component: {fileID: 3507410673780365835}
   - component: {fileID: 8259839357754065960}
+  - component: {fileID: 1288561344876618944}
   m_Layer: 0
   m_Name: TENCERE
   m_TagString: pan
@@ -101,20 +101,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &3507410673780365835
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4740227680583334236}
-  m_Material: {fileID: 13400000, guid: ab51bb5fba769cb47a1e30ae1a9a5197, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 172462c95ba3b3940a5615575292ad38, type: 3}
 --- !u!114 &8259839357754065960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,3 +113,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b51e7a5dd5a9b8f4490dcaba23d6319b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1288561344876618944
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4740227680583334236}
+  m_Material: {fileID: 13400000, guid: ab51bb5fba769cb47a1e30ae1a9a5197, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3396354, y: 1.0770756, z: 2.054555}
+  m_Center: {x: -0.0015358223, y: 0.11546123, z: -0.000043395616}

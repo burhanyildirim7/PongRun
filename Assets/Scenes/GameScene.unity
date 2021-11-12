@@ -1596,21 +1596,21 @@ MonoBehaviour:
   tempLevelNo: 0
   totalLevelNo: 0
   levels:
-  - {fileID: 5638670142546799293, guid: 49d7f14e056f84421b50e0dcdedf844e, type: 3}
   - {fileID: 2839482737541086158, guid: b75b9c0321e7e4a04835fd2a2b816448, type: 3}
-  - {fileID: 698769172150621622, guid: e75071ae0789a4268a0d6b4335dc079e, type: 3}
-  - {fileID: 5113490686811321308, guid: 5a56dd66bbe4943e986fff49aa1eacc2, type: 3}
-  - {fileID: 8533733282143136053, guid: a1f503cd479f44bc5b062b22e6277499, type: 3}
-  - {fileID: 2364544695579611112, guid: e60c9d3d69b92425a8e0abe1d48a23e8, type: 3}
   - {fileID: 3952426403859043853, guid: fee596925f9434c7d8321d024e173dd8, type: 3}
+  - {fileID: 2364544695579611112, guid: e60c9d3d69b92425a8e0abe1d48a23e8, type: 3}
+  - {fileID: 8533733282143136053, guid: a1f503cd479f44bc5b062b22e6277499, type: 3}
+  - {fileID: 5113490686811321308, guid: 5a56dd66bbe4943e986fff49aa1eacc2, type: 3}
+  - {fileID: 698769172150621622, guid: e75071ae0789a4268a0d6b4335dc079e, type: 3}
+  - {fileID: 5638670142546799293, guid: 49d7f14e056f84421b50e0dcdedf844e, type: 3}
   playerVector:
-  - {x: -50, y: -15, z: 0}
   - {x: -48.5, y: -32.6, z: 0}
-  - {x: -10, y: -20, z: 0}
-  - {x: -30.6, y: -11, z: 0}
-  - {x: 1.4, y: -20.7, z: 0}
-  - {x: -47.1, y: -23.6, z: 0}
   - {x: -35, y: 5, z: 0}
+  - {x: -47.1, y: -23.6, z: 0}
+  - {x: 1.4, y: -20.7, z: 0}
+  - {x: -30.6, y: -11, z: 0}
+  - {x: -10, y: -20, z: 0}
+  - {x: -50, y: -15, z: 0}
   force:
   - 100
   - 100
